@@ -96,16 +96,30 @@ function articleMaker(artObj){
   const title = document.createElement('h2');
   const date = document.createElement('p');
   const paragraph = document.createElement('p');
+  const paragraph2 = document.createElement('p');
+  const paragraph3 = document.createElement('p');
   const expand = document.createElement('span');
 
 article.appendChild(title);
 article.appendChild(date);
 article.appendChild(paragraph);
+article.appendChild(paragraph2)
+article.appendChild(paragraph3)
 article.appendChild(expand);
+
+title.textContent = artObj.title;
+date.textContent = artObj.date;
+expand.textContent = "+";
+
 
 
   article.classList.add('article')
-console.log(article)
+  date.classList.add('date');
+  expand.classList.add('expandButton')
+
+expand.addEventListener('click', () => {
+  article.classList.toggle('article-open');
+})
 
   return article;
 }
