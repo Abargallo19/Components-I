@@ -110,12 +110,13 @@ article.appendChild(expand);
 title.textContent = artObj.title;
 date.textContent = artObj.date;
 expand.textContent = "+";
-
-
+paragraph.textContent = artObj.firstParagraph;
+paragraph2.textContent = artObj.secondParagraph;
+paragraph3.textContent = artObj.thirdParagraph;
 
   article.classList.add('article')
   date.classList.add('date');
-  expand.classList.add('expandButton')
+  expand.classList.add('expandButton');
 
 expand.addEventListener('click', () => {
   article.classList.toggle('article-open');
