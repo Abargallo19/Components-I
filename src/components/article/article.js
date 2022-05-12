@@ -93,19 +93,20 @@ const data = [
 
 function articleMaker(artObj){
   const article = document.createElement('div');
-  const artTitle = document.createElement('h2');
+  const title = document.createElement('h2');
   const date = document.createElement('p');
   const paragraph = document.createElement('p');
   const expand = document.createElement('span');
 
-article.appendChild(artTitle);
+article.appendChild(title);
 article.appendChild(date);
+article.appendChild(paragraph);
 article.appendChild(expand);
-
 
 
   article.classList.add('article')
 console.log(article)
+
   return article;
 }
 
