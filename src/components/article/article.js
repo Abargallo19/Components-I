@@ -96,7 +96,14 @@ function articleMaker(artObj){
   const artTitle = document.createElement('h2');
   const date = document.createElement('p');
   const paragraph = document.createElement('p');
-  const expand = document.createElement('s')
+  const expand = document.createElement('span');
+
+article.appendChild(artTitle);
+article.appendChild(date);
+article.appendChild(expand);
+
+
+
   article.classList.add('article')
 console.log(article)
   return article;
