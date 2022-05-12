@@ -91,10 +91,12 @@ const data = [
 ];
 
 
-function articleMaker(){
+function articleMaker(artObj){
   const article = document.createElement('div');
   const artTitle = document.createElement('h2');
   const date = document.createElement('p');
+  const paragraph = document.createElement('p');
+  const expand = document.createElement('s')
   article.classList.add('article')
 console.log(article)
   return article;
