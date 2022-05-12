@@ -103,8 +103,8 @@ function articleMaker(artObj){
 article.appendChild(title);
 article.appendChild(date);
 article.appendChild(paragraph);
-article.appendChild(paragraph2)
-article.appendChild(paragraph3)
+article.appendChild(paragraph2);
+article.appendChild(paragraph3);
 article.appendChild(expand);
 
 title.textContent = artObj.title;
@@ -124,6 +124,13 @@ expand.addEventListener('click', () => {
 
   return article;
 }
+
+
+
+data.forEach(item => {
+  const artSection = document.querySelector('.articles');
+  artSection.appendChild(articleMaker(item));
+})
 
 
 /*
